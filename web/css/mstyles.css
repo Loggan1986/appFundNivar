@@ -1,0 +1,32 @@
+
+table{
+	border: 5px;
+}
+
+tbody{
+	border:red 1px solid;
+}
+
+th{
+	text-align: center;
+}
+
+.imging {
+	width: 130px;
+	height: 35px;
+	border-radius: 10px;
+	box-shadow: 3px 3px;
+}
+
+table {
+	margin: 15px;
+}
+
+label{
+	text-align: right;
+	font-size: 19px;
+}
+
+input{
+	width: 50%;
+}
