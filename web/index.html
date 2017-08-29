@@ -1,195 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>NIVARIA</title>
-  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>NIVARIA</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="css/animate.css" rel="stylesheet" type="text/css" />
+      <link href="css/admin.css" rel="stylesheet" type="text/css" />
+      <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+      <link href="plugins/kalendar/kalendar.css" rel="stylesheet">
+      <link rel="stylesheet" href="plugins/scroll/nanoscroller.css">
+      <link href="plugins/morris/morris.css" rel="stylesheet" />
 
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/animate.css" rel="stylesheet" type="text/css" />
-  <link href="css/admin.css" rel="stylesheet" type="text/css" />
-  <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <link href="plugins/kalendar/kalendar.css" rel="stylesheet">
-  <link rel="stylesheet" href="plugins/scroll/nanoscroller.css">
-  <link href="plugins/morris/morris.css" rel="stylesheet" />
-  
-  </head>
+    </head>
 
-  <body class="light_theme  fixed_header left_nav_fixed">
-    <div class="wrapper">
-      
-      <div class="header_bar">
-        <div class="brand">
-          <div class="logo" style="display:block"><span class="theme_color">NIVARIA</span> Admin</div>
-            <div class="small_logo" style="display:none">
-              <img src="images/s-logo.png" width="50" height="47" alt="s-logo"/>
-              <img src="images/r-logo.png" width="122" height="20" alt="r-logo" />
+    <body class="light_theme  fixed_header left_nav_fixed">
+        <div class="wrapper">
+            <div class="header_bar">
+                <div class="brand">
+                    <div class="logo" style="display:block"><span class="theme_color">NIVARIA</span> Admin</div>
+                    <div class="small_logo" style="display:none">
+                        <img src="images/s-logo.png" width="50" height="47" alt="s-logo"/>
+                        <img src="images/r-logo.png" width="122" height="20" alt="r-logo" />
+                    </div>
+                </div>
+                
+                <div class="header_top_bar">
+                    <a href="javascript:void(0);" class="menutoggle"><i class="fa fa-bars"></i></a>
+                    <div class="top_left">
+                        <div class="top_left_menu">
+                            <ul>
+                                <li><a href="javascript:void(0);"><i class="fa fa-repeat"></i></a></li>
+                                <li class="dropdown"><a data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-th-large"></i></a>
+                                    <ul class="drop_down_task dropdown-menu" style="margin-top:39px">
+                                        <div class="top_left_pointer"></div>
+                                        <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda </a></li>
+                                        <li><a href="#"><i class="fa fa-cog"></i> Herramientas </a></li>
+                                        <li><a href="#"><i class="fa fa-power-off"></i> Cerrar sesion </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="top_right_bar">
+                        <div class="top_right">
+                            <div class="top_right_menu">
+                                <ul>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" data-toggle="dropdown"> Tareas <span class="badge badge"></span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" data-toggle="dropdown"> Correo <span class="badge badge color_1"></span></a>
+                                        <ul class="drop_down_task dropdown-menu">
+                                            <div class="top_pointer"></div>
+                                            <li><p class="number"></p></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javascript:void(0);" data-toggle="dropdown"> notification <span class="badge badge color_2"></span></a>
+                                        <div class="notification_drop_down dropdown-menu">
+                                            <div class="top_pointer"></div>
+                                            <div class="box">
+                                                <a href="#">
+                                                    <span class="block primery_6"> <i class="fa fa-envelope-o"></i></span>
+                                                    <span class="block_text">Mailbox</span>
+                                                </a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#">
+                                                    <span class="block primery_2"> <i class="fa fa-calendar-o"></i></span>
+                                                    <span class="block_text">Calendar</span>
+                                                </a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#"> <span class="block primery_4"> <i class="fa fa-map-marker"></i> </span>
+                                                    <span class="block_text">Map</span>
+                                                </a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#">
+                                                    <span class="block primery_3"> <i class="fa fa-plane"></i> </span>
+                                                    <span class="block_text">To-Do</span>
+                                                </a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#">
+                                                    <span class="block primery_5"> <i class="fa fa-picture-o"></i> </span>
+                                                    <span class="block_text">Tasks</span>
+                                                </a>
+                                            </div>
+                                            <div class="box">
+                                                <a href="#">
+                                                    <span class="block primery_1"> <i class="fa fa-clock-o"></i> </span>
+                                                    <span class="block_text">Timeline</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="user_admin dropdown">
+                            <a href="javascript:void(0);" data-toggle="dropdown">
+                                <img src="images/user.png"/><span class="user_adminname">Usuario</span><b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <div class="top_pointer"></div>
+                                <li> <a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
+                                <li> <a href="help.html"><i class="fa fa-question-circle"></i> Help</a></li>
+                                <li> <a href="settings.html"><i class="fa fa-cog"></i> Setting </a></li>
+                                <li> <a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                            </ul>
+                        </div>
+                        
+                        <a href="javascript:;" class="toggle-menu menu-right push-body jPushMenuBtn rightbar-switch">
+                            <i class="fa fa-comment chat"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="inner">
+                <div class="left_nav">
+                    <div class="left_nav_slidebar">
+                        <ul>
+                            <li class="left_nav_active theme_border">
+                                <a href="inicio.jsp" target="fullS">
+                                    <i class="fa fa-home"></i> INICIO <span class="left_nav_pointer"></span>
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-edit"></i> Admiciones <span class="plus"><i class="fa fa-plus"></i></span></a>
+                                <ul>
+                                    <li> <a href="preinscripcion/preinscripcionButtons.jsp" target="fullS"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Pre-Inscripciones</b> </a> </li>
+                                    <li> <a href="#" target=""> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Inscripciones</b> </a> </li>
+                                    <li> <a href="#"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Liquidaciones</b> </a> </li>
+                                    <li> <a href="#"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Matriculas</b> </a> </li>
+                                    <li> <a href="#"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Documentación</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-file-text-o"></i> Registro Academico 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Asistencia</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Calificaciones</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Grupos</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Programas</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Prog. Academica</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Horarios</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-paperclip"></i> Soporte Academico
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Inasistencia</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Calificaciones</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-user"></i> Docentes 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Registrar</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Estado</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-user"></i> Alumnos 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #1</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #2</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #3</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #4</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #5</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Opción #6</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-pencil"></i> Programacion Academica 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Crear</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Programaciones</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-sitemap"></i> Programas Academicos 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Nuevo</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Programas</b> </a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);"> <i class="fa fa-users"></i> Admin. Usuarios 
+                                    <span class="plus"><i class="fa fa-plus"></i></span>
+                                </a>
+                                <ul>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Nuevo</b> </a> </li>
+                                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Estado</b> </a> </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="header_top_bar">
-           <a href="javascript:void(0);" class="menutoggle"><i class="fa fa-bars"></i></a>
-              <div class="top_left">
-                <div class="top_left_menu">
-                  <ul>
-                    <li><a href="javascript:void(0);"><i class="fa fa-repeat"></i></a></li>
-                    <li class="dropdown"><a data-toggle="dropdown" href="javascript:void(0);"><i class="fa fa-th-large"></i></a>
-                      <ul class="drop_down_task dropdown-menu" style="margin-top:39px">
-                        <div class="top_left_pointer"></div>
-                          <li><a href="#"><i class="fa fa-question-circle"></i> Ayuda </a></li>
-                          <li><a href="#"><i class="fa fa-cog"></i> Herramientas </a></li>
-                          <li><a href="#"><i class="fa fa-power-off"></i> Cerrar sesion </a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="top_right_bar">
-                <div class="top_right">
-                  <div class="top_right_menu">
-                    <ul>
-                      <li class="dropdown">
-                        <a href="javascript:void(0);" data-toggle="dropdown"> Tareas <span class="badge badge"></span></a>
-                      </li>
-                      <li class="dropdown">
-                        <a href="javascript:void(0);" data-toggle="dropdown"> Correo <span class="badge badge color_1"></span></a>
-                          <ul class="drop_down_task dropdown-menu">
-                            <div class="top_pointer"></div>
-                              <li>
-                                <p class="number"></p>
-                              </li>
-                          </ul>
-                      </li>
-                      <li class="dropdown">
-                        <a href="javascript:void(0);" data-toggle="dropdown"> 
-                          notification <span class="badge badge color_2"></span>
-                        </a>
-                          <div class="notification_drop_down dropdown-menu">
-                            <div class="top_pointer"></div>
-                              <div class="box">
-                                <a href="#">
-                                  <span class="block primery_6"> <i class="fa fa-envelope-o"></i></span>
-                                  <span class="block_text">Mailbox</span>
-                                </a>
-                              </div>
-
-                              <div class="box"> 
-                                <a href="#"> 
-                                  <span class="block primery_2"> <i class="fa fa-calendar-o"></i></span>
-                                  <span class="block_text">Calendar</span>
-                                </a>
-                              </div>
-
-                              <div class="box">
-                                <a href="#"> <span class="block primery_4"> <i class="fa fa-map-marker"></i> </span>
-                                  <span class="block_text">Map</span>
-                                </a>
-                              </div>
-
-                              <div class="box">
-                                <a href="#">
-                                  <span class="block primery_3"> <i class="fa fa-plane"></i> </span>
-                                  <span class="block_text">To-Do</span>
-                                </a>
-                              </div>
-
-                              <div class="box">
-                                <a href="#"> <span class="block primery_5"> <i class="fa fa-picture-o"></i> </span>
-                                  <span class="block_text">Tasks</span>
-                                </a>
-                              </div>
-
-                              <div class="box">
-                                <a href="#">
-                                  <span class="block primery_1"> <i class="fa fa-clock-o"></i> </span>
-                                  <span class="block_text">Timeline</span>
-                                </a>
-                              </div>
-                          </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="user_admin dropdown">
-                  <a href="javascript:void(0);" data-toggle="dropdown">
-                    <img src="images/user.png"/>
-                    <span class="user_adminname">Usuario</span>
-                    <b class="caret"></b>
-                  </a>
-                    <ul class="dropdown-menu">
-                      <div class="top_pointer"></div>
-                        <li> <a href="profile.html"><i class="fa fa-user"></i> Profile</a></li>
-                        <li> <a href="help.html"><i class="fa fa-question-circle"></i> Help</a></li>
-                        <li> <a href="settings.html"><i class="fa fa-cog"></i> Setting </a></li>
-                        <li> <a href="login.html"><i class="fa fa-power-off"></i> Logout</a></li>
-                    </ul>
-                </div>
-
-                  <a href="javascript:;" class="toggle-menu menu-right push-body jPushMenuBtn rightbar-switch">
-                    <i class="fa fa-comment chat"></i>
-                  </a>
-              </div>
-        </div>       
-      </div>
-      
-      <div class="inner">
-        <div class="left_nav">
-          <div class="left_nav_slidebar">
-            <ul>
-              <li class="left_nav_active theme_border">
-                <a href="#" target="">
-                  <i class="fa fa-home"></i> INICIO <span class="left_nav_pointer"></span>
-                    <span class="plus">
-                      <i class="fa fa-plus"></i>
-                    </span>
-                </a>
-                  
-              </li>
-
-              <li>
-                <a href="javascript:void(0);"> <i class="fa fa-edit"></i> Registro 1  
-                  <span class="plus"><i class="fa fa-plus"></i></span>
-                </a>
-
-                  <ul>
-                    <li> <a href="preinscripcion/crearPreinscripcion.jsp" target="fullS"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Pre-Inscripción</b> </a> </li>          <li> <a href="#"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Inscripción</b> </a> </li>
-                    <li> <a href="#"> <span>&nbsp;</span> <i class="fa fa-circle"></i> <b>Matricula</b> </a> </li>
-                  </ul>
-              </li>
-
-              <li>
-                <a href="javascript:void(0);"> <i class="fa fa-tasks"></i> Registro 2
-                    <span class="plus"><i class="fa fa-plus"></i></span>
-                </a>
-                  <ul>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Docentes</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Alumnos</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Aulas</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Grupos</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Programas</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Prog. Academica</b> </a> </li>
-                    <li><a href="#"><span>&nbsp;</span><i class="fa fa-circle"></i><b>Horarios</b> </a> </li>
-                  </ul>
-              </li>          
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
         
         <div class="contentpanel">
           <div class="pull-left breadcrumb_admin clear_both">
             <div class="pull-left page_title theme_color">
               <h1>Fundación Nivaria</h1>
-                <h2>Registro y Admisiones</h2>
+              <h2>Registro y Admisiones</h2>
             </div>        
           </div>
 
           <div class="col-md-12">
-    	    <iframe id="miIframe" src="wellcome.html" name="fullS" frameborder="0" scrolling="auto" width="100%" height="800px" border="0"></iframe>
+    	    <iframe id="miIframe" src="inicio.jsp" name="fullS" frameborder="0" scrolling="auto" width="100% auto" height="1000px" border="0"></iframe>
           </div>
         </div>
 
