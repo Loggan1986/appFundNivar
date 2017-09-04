@@ -1,5 +1,5 @@
 <%-- 
-    Document   : crearPreinscripcion
+    Document   : modificarPreinscripcion
     Created on : 25/08/2017, 03:37:13 PM
     Author     : Estudiante
 --%>
@@ -122,57 +122,43 @@
                         <div class="form-group col-md-6">
                           <label class="col-sm-4 control-label">Lugar de nacimiento</label>
                           <div class="col-sm-8">
-                                <select class="form-control" id="source">
-                                    <option value="SP">- Seleccione -</option>
-                                    <optgroup label="Bolivar">
-                                          <option value="AK"> Achí </option>
-                                          <option value="HI"> Altos Del Rosario </option>
-                                          <option value="HI"> Arenal </option>
-                                          <option value="HI"> Arjona </option>
-                                          <option value="HI"> Arroyohondo </option>
-                                          <option value="HI"> Barranco De Loba </option>
-                                          <option value="HI"> Cartagena De Indias </option>
-                                          <option value="HI"> Calamar </option>
-                                          <option value="HI"> Cantagallo </option>
-                                          <option value="HI"> Cicuco </option>
-                                          <option value="HI"> Clemencia </option>
-                                          <option value="HI"> Córdoba </option>
-                                          <option value="HI"> El Carmen </option>
-                                          <option value="HI"> El Guamo </option>
-                                          <option value="HI"> El Peñon </option>
-                                          <option value="HI"> Hatillo De Loba </option>
-                                          <option value="HI"> Magangué </option>
-                                          <option value="HI"> Mahates </option>
-                                          <option value="HI"> Margarita </option>
-                                          <option value="HI"> Maria La Baja </option>
-                                          <option value="HI"> Montecristo </option>
-                                          <option value="HI"> Morales </option>
-                                          <option value="HI"> Norosí </option>
-                                          <option value="HI"> Pinillos </option>
-                                          <option value="HI"> Regidor </option>
-                                          <option value="HI"> Rio Viejo </option>
-                                          <option value="HI"> San Cristobal </option>
-                                          <option value="HI"> San Estanislao </option>
-                                          <option value="HI"> San Fernando </option>
-                                          <option value="HI"> San Jacinto </option>
-                                          <option value="HI"> San Jacinto Del Cauca </option>
-                                          <option value="HI"> San Juan Nepomuceno </option>
-                                          <option value="HI"> San Martín De Loba </option>
-                                          <option value="HI"> San Pablo </option>
-                                          <option value="HI"> Santa Catalina </option>
-                                          <option value="HI"> Santa Cruz de Mompox </option>
-                                          <option value="HI"> Santa Rosa De Lima </option>
-                                          <option value="HI"> Santa Rosa del sur </option>
-                                          <option value="HI"> Simití </option>
-                                          <option value="HI"> Soplaviento </option>
-                                          <option value="HI"> Talaigua Nuevo </option>
-                                          <option value="HI"> Tiquisio </option>
-                                          <option value="HI"> Turbana </option>
-                                          <option value="HI"> Villanueva </option>
-                                          <option value="HI"> Zambrano </option>
-                                    </optgroup>
-                                </select>
-                          </div>
+                                        <select class="form-control" id="dep1" name="dep1" onchange="departament(this.id,'mun2')">
+                                              <option value="">- Departamento -</option>
+                                              <option value="guajira"> Guajira </option>
+                                              <option value="atlantico"> Atlántico </option>
+                                              <option value="magdalena"> Magdalena </option>
+                                              <option value="cesar"> Cesar </option>
+                                              <option value="sucre"> Sucre </option>
+                                              <option value="bolivar"> Bolívar </option>
+                                              <option value="cordoba"> Cordoba </option>
+                                              <option value="nortedesantander"> Norte De Santander </option>
+                                              <option value="antioquia"> Antioquia </option>
+                                              <option value="santander"> Santander </option>
+                                              <option value="arauca"> Arauca </option>
+                                              <option value="choco"> Chocó </option>
+                                              <option value="caldas"> Caldas </option>
+                                              <option value="boyaca"> Boyacá </option>
+                                              <option value="casanare"> Casanare </option>
+                                              <option value="risaralda"> Risaralda </option>
+                                              <option value="cundinamarca"> Cundinamarca </option>
+                                              <option value="quindio"> Quindio </option>
+                                              <option value="tolima"> Tolima </option>
+                                              <option value="valle"> Valle </option>
+                                              <option value="huila"> Huila </option>
+                                              <option value="cauca"> Cauca </option>
+                                              <option value="nariño"> Nariño </option>
+                                              <option value="putumayo"> Putumayo </option>
+                                              <option value="caqueta"> Caquetá </option>
+                                              <option value="meta"> Meta </option>
+                                              <option value="vichada"> Vichada </option>
+                                              <option value="guaviare"> Guaviare </option>
+                                              <option value="guainia"> Guainía </option>
+                                              <option value="vaupes"> Vaupés </option>
+                                              <option value="amazonas"> Amazonas </option>
+                                              <option value="sanandres"> San Andrés y Providencia </option>
+                                              <option value="bogota"> Bogotá </option>
+                                        </select>
+                                    </div>
                         </div>
                       </div>
                       
@@ -348,13 +334,14 @@
                     
 
                     </form>
-                            <div class="container">
-                                <div class="row">
-                                  <div class="col-md-12 pull-left">
-                                    <a href="#regpreins" class="btn btn-info btn-lg" data-toggle="modal">Actualizar</a>
-                                  </div>
-                                </div>
-                            </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5"></div>
+                          <div class="col-md-7">
+                            <a href="listarPreinscripcion.jsp" class="btn btn-info btn-lg" data-toggle="modal">Actualizar</a>
+                          </div>
+                        </div>
+                    </div>
             </div>
                         </div>
                     </div>

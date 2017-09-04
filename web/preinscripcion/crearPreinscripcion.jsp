@@ -18,6 +18,19 @@
     <link rel="stylesheet" href="../plugins/scroll/nanoscroller.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
+    <script type="text/javascript">
+        function mostrar(){
+        document.getElementById('ocultar1').style.display = 'block';
+        document.getElementById('ocultar2').style.display = 'block';
+        document.getElementById('ocultar3').style.display = 'block';
+        document.getElementById('ocultar4').style.display = 'block';}
+    
+        function ocultar(){
+        document.getElementById('ocultar1').style.display = 'none';
+        document.getElementById('ocultar2').style.display = 'none';
+        document.getElementById('ocultar3').style.display = 'none';
+        document.getElementById('ocultar4').style.display = 'none';}
+    </script>
 <body>	
       <div class="container">     
             <div class="row">
@@ -28,9 +41,7 @@
                           <div class="actions"> <a class="minimize" href="#"><i class="fa fa-chevron-down"></i></a><a class="close-down" href="#"><i class="fa fa-times"></i></a> </div>
                           <h1 class="content-header" align="center"> Formulario </h1>
                         </div>
-
                         <br>
-
                         <div class="porlets-content">
 
                           <form action="" class="form-horizontal row-border">
@@ -55,27 +66,24 @@
 
                             <div class="row">
                               <div class="form-group col-md-6">
-                                <label class="col-sm-4 control-label">Tipo De Programa</label>
+                                <label class="col-sm-4 control-label">Tipo De Estudio</label>
                                    <div class="col-sm-8">
-                                      <select class="form-control" id="source">
-                                          <option value="SELEC">- Seleccione -</option>
+                                       <select class="form-control" id="tprog1" name="tprog1" onchange="populate(this.id,'nprog2')">
+                                          <option active>- Seleccione -</option>
                                           <optgroup label="">
-                                                <option value="ESP"> Especializacion </option>
-                                                <option value="PF"> Profesional </option>
-                                                <option value="MS"> Maestria </option>
-                                                <option value="DT"> Doctorado </option>
-                                                <option value="PS"> Posgrado </option>
-                                                <option value="TC"> Técnico </option>
-                                                <option value="TG"> Técnologo </option>
+                                                <option value="TIT">Titulada </option>
+                                                <option value="COR"> Corto </option>
+                                                <option value="FLA"> Flash </option>
+                                                <option value="OTR"> Otro </option>
                                           </optgroup>
                                     </select>
                                   </div>
                               </div> 
 
                               <div class="form-group col-md-6">
-                                <label class="col-sm-4 control-label">Nombres Del Programa</label>
+                                <label class="col-sm-4 control-label">Nombre Del Programa</label>
                                   <div class="col-sm-8">
-                                      <input type="text" id="otro" class="form-control" placeholder="Cual" disabled>
+                                      <select name="nprog2" id="nprog2" class="form-control"></select>
                                   </div>
                               </div>
                             </div>
@@ -100,69 +108,11 @@
                               <div class="form-group col-md-6">
                                 <label class="col-sm-4 control-label">Fecha de nacimiento</label>
                                   <div class="col-sm-8">
-                                      <input type="date" name="fecha" class="form-control date-time">
+                                      <input type="date" name="cumpleaños" step="1" min="1960-01-01" max="2002-01-01" class="form-control date-time">
                                   </div>
-                              </div> 
-
-                              <div class="form-group col-md-6">
-                                <label class="col-sm-4 control-label">Lugar de nacimiento</label>
-                                <div class="col-sm-8">
-                                      <select class="form-control" id="source">
-                                          <option value="SP">- Seleccione -</option>
-                                          <optgroup label="Bolivar">
-                                                <option value="AK"> Achí </option>
-                                                <option value="HI"> Altos Del Rosario </option>
-                                                <option value="HI"> Arenal </option>
-                                                <option value="HI"> Arjona </option>
-                                                <option value="HI"> Arroyohondo </option>
-                                                <option value="HI"> Barranco De Loba </option>
-                                                <option value="HI"> Cartagena De Indias </option>
-                                                <option value="HI"> Calamar </option>
-                                                <option value="HI"> Cantagallo </option>
-                                                <option value="HI"> Cicuco </option>
-                                                <option value="HI"> Clemencia </option>
-                                                <option value="HI"> Córdoba </option>
-                                                <option value="HI"> El Carmen </option>
-                                                <option value="HI"> El Guamo </option>
-                                                <option value="HI"> El Peñon </option>
-                                                <option value="HI"> Hatillo De Loba </option>
-                                                <option value="HI"> Magangué </option>
-                                                <option value="HI"> Mahates </option>
-                                                <option value="HI"> Margarita </option>
-                                                <option value="HI"> Maria La Baja </option>
-                                                <option value="HI"> Montecristo </option>
-                                                <option value="HI"> Morales </option>
-                                                <option value="HI"> Norosí </option>
-                                                <option value="HI"> Pinillos </option>
-                                                <option value="HI"> Regidor </option>
-                                                <option value="HI"> Rio Viejo </option>
-                                                <option value="HI"> San Cristobal </option>
-                                                <option value="HI"> San Estanislao </option>
-                                                <option value="HI"> San Fernando </option>
-                                                <option value="HI"> San Jacinto </option>
-                                                <option value="HI"> San Jacinto Del Cauca </option>
-                                                <option value="HI"> San Juan Nepomuceno </option>
-                                                <option value="HI"> San Martín De Loba </option>
-                                                <option value="HI"> San Pablo </option>
-                                                <option value="HI"> Santa Catalina </option>
-                                                <option value="HI"> Santa Cruz de Mompox </option>
-                                                <option value="HI"> Santa Rosa De Lima </option>
-                                                <option value="HI"> Santa Rosa del sur </option>
-                                                <option value="HI"> Simití </option>
-                                                <option value="HI"> Soplaviento </option>
-                                                <option value="HI"> Talaigua Nuevo </option>
-                                                <option value="HI"> Tiquisio </option>
-                                                <option value="HI"> Turbana </option>
-                                                <option value="HI"> Villanueva </option>
-                                                <option value="HI"> Zambrano </option>
-                                          </optgroup>
-                                      </select>
-                                </div>
                               </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="form-group col-md-6">
+                                
+                               <div class="form-group col-md-6">
                                 <label class="col-sm-4 control-label">Genero</label>
                                     <div class="radio col-md-8">
                                         <div class="">
@@ -172,8 +122,64 @@
                                           </label>                                  
                                         </div>
                                     </div>
+                              </div>                              
+                              
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-4 control-label">Lugar de nacimiento</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="dep1" name="dep1" onchange="departament(this.id,'mun2')">
+                                              <option value="">- Departamento -</option>
+                                              <option value="guajira"> Guajira </option>
+                                              <option value="atlantico"> Atlántico </option>
+                                              <option value="magdalena"> Magdalena </option>
+                                              <option value="cesar"> Cesar </option>
+                                              <option value="sucre"> Sucre </option>
+                                              <option value="bolivar"> Bolívar </option>
+                                              <option value="cordoba"> Cordoba </option>
+                                              <option value="nortedesantander"> Norte De Santander </option>
+                                              <option value="antioquia"> Antioquia </option>
+                                              <option value="santander"> Santander </option>
+                                              <option value="arauca"> Arauca </option>
+                                              <option value="choco"> Chocó </option>
+                                              <option value="caldas"> Caldas </option>
+                                              <option value="boyaca"> Boyacá </option>
+                                              <option value="casanare"> Casanare </option>
+                                              <option value="risaralda"> Risaralda </option>
+                                              <option value="cundinamarca"> Cundinamarca </option>
+                                              <option value="quindio"> Quindio </option>
+                                              <option value="tolima"> Tolima </option>
+                                              <option value="valle"> Valle </option>
+                                              <option value="huila"> Huila </option>
+                                              <option value="cauca"> Cauca </option>
+                                              <option value="nariño"> Nariño </option>
+                                              <option value="putumayo"> Putumayo </option>
+                                              <option value="caqueta"> Caquetá </option>
+                                              <option value="meta"> Meta </option>
+                                              <option value="vichada"> Vichada </option>
+                                              <option value="guaviare"> Guaviare </option>
+                                              <option value="guainia"> Guainía </option>
+                                              <option value="vaupes"> Vaupés </option>
+                                              <option value="amazonas"> Amazonas </option>
+                                              <option value="sanandres"> San Andrés y Providencia </option>
+                                              <option value="bogota"> Bogotá </option>
+                                        </select>
+                                    </div>
+                              </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label class="col-sm-4 control-label">Municipio o Corregimiento</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control" id="mun2" name="mun2"></select>
+                                    </div>
                               </div>
 
+                              
+                             </div>
+
+                            <div class="row">
                               <div class="form-group col-md-6">
                                 <label class="col-sm-4 control-label">Estado civil</label>
                                   <div class="col-sm-8">
@@ -187,29 +193,17 @@
                                     </select>
                                   </div>
                               </div>
-                             </div>
-
-                            <div class="row">
-                              <div class="form-group col-md-6">
-                                <label class="col-sm-4 control-label">Nacionalidad</label>
-                                <div class="col-sm-8">
-                                  <input type="text" class="form-control" placeholder="Nacionalidad">
-                                </div>
-                              </div>
 
                               <div class="form-group col-md-6">
                                 <label class="col-sm-4 control-label">Tipo documento</label>
                                     <div class="col-md-8">
                                         <select class="form-control" id="">
                                           <option value="">- Seleccione -</option>
-                                          <option value="CI"> Cedula de Identidad </option>
                                           <option value="CC"> Cedula de Ciudadania </option>
                                           <option value="TI"> Tarjeta de Identidad </option>
                                           <option value="RC"> Registro Civil </option>
                                           <option value="CE"> Cedula de Extranjeria </option>
-                                          <option value="CI2"> Carnet de Identidad </option>
-                                          <option value="DNI"> Documento Nacional de Identidad </option>
-                                          <option value="DUI"> Documento Único de Identidad </option>
+                                          <option value="PA"> Pasaporte </option>
                                         </select>                                        
                                     </div>
                               </div>
@@ -268,46 +262,56 @@
                                     <label class="col-sm-4 control-label">Labora actualmente</label>
                                         <div class="radio col-sm-8">
                                             <div class="">
-                                              <label for="radio1">
-                                                  <input type="radio" name="labor1" value="si" id="empresa">Si<br>
-                                                  <input type="radio" name="labor2" value="no">No
+                                              <label for="checkbox1">
+                                                  <input type="checkbox" name="labor1" value="si" onclick="mostrar()">Si<br>
+                                                  <input type="checkbox" name="labor2" value="no" onclick="ocultar()" >No
                                               </label>                                  
                                             </div>
                                         </div>
                                   </div>
 
-                                  <div class="form-group col-md-6">
+                                  <div class="form-group col-md-6" id="ocultar1" style="display: none;">
                                       <label class="col-sm-4 control-label">Nombre de la Empresa</label>
                                         <div class="col-sm-8">
-                                            <input type="text" class="form-control" disabled>
+                                            <input name="nom" id="nom" type="text" class="form-control">
                                         </div>
                                   </div>
                               </div>
 
-                              <div class="row">
+                              <div class="row" id="ocultar2" style="display: none;">
                                   <div class="form-group col-md-6">
                                     <label class="col-sm-4 control-label">Dirección de la Empresa</label>
                                       <div class="col-sm-8">
-                                          <input type="text" class="form-control" disabled>
+                                          <input type="text" class="form-control">
                                       </div>
                                   </div>
 
                                   <div class="form-group col-md-6">
                                     <label class="col-sm-4 control-label">Telefono de la Empresa</label>
                                       <div class="col-sm-8">
-                                          <input type="tel" class="form-control" disabled>
+                                          <input type="tel" class="form-control">
                                       </div>
                                   </div>
                               </div>
 
                               <div class="row">
-                                  <div class="form-group col-md-6">
+                                  <div class="form-group col-md-6" id="ocultar3" style="display: none;">
                                     <label class="col-sm-4 control-label">Correo de la Empresa</label>
                                       <div class="col-sm-8">
-                                          <input type="email" class="form-control" disabled>
+                                          <input type="email" class="form-control">
                                       </div>
                                   </div>
-
+                                  
+                                  <div class="form-group col-md-6" id="ocultar4" style="display: none;">
+                                      <label class="col-sm-4 control-label">Cargo</label>
+                                      <div class="col-sm-8">
+                                          <input type="text" class="form-control">
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                              
+                              <div class="row">
                                   <div class="form-group col-md-6">
                                     <label class="col-sm-4 control-label">Nivel de estudios</label>
                                         <div class="col-md-8">
@@ -324,12 +328,13 @@
                                             </select>                                        
                                         </div>
                                   </div>
-                                </div>
-                          </form>
-                            
+                              </div>
+                              
+                              
+                          </form>  
+                            <br>
                             <div class="row">
-                                <div class="col-md-5"></div>
-                                <div class="panel col-md-7">
+                                <div class="panel col-md-6">
                                   <div class="panel-body">
                                     <!-- Button trigger modal -->
                                     <button data-target="#mensaje1" data-toggle="modal" class="btn btn-primary btn-lg mb10"> Registrar </button>
@@ -364,7 +369,7 @@
                                     </div>
                                     <div class="modal-body" align="justify">Se han guardado todos los datos con exito.</div>
                                     <div class="modal-footer">
-                                      <a href="wellcome.html" type="button" class="btn btn-primary">Aceptar</a>
+                                      <a href="listarPreinscripcion.jsp" type="button" class="btn btn-primary">Aceptar</a>
                                     </div>
                                   </div>
                                 </div>
@@ -376,6 +381,8 @@
             </div>
       </div>
 
+    <script src="../js/myScript.js"></script>
+    <script src="../js/depmun.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/jquery-2.1.0.js"></script>
     <script src="../js/bootstrap.min.js"></script>
