@@ -7,44 +7,62 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>INICIO</title>
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link href="css/jquerysctipttop.css" rel="stylesheet" type="text/css">        
-    </head>
-    <body>
-        <div class="container">
-            <h1 aling="center">WELLCOME TO NIVARIA FUNDATION</h1>
-        </div>
-        
-                
-        
-        
-        
-        
-        <script src="js/jquery-2.1.0.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/common-script.js"></script>
-        <script src="js/jquery.slimscroll.min.js"></script>
-        <script src="js/jquery.sparkline.js"></script>
-        <script src="js/sparkline-chart.js"></script>
-        <script src="js/graph.js"></script>
-        <script src="js/edit-graph.js"></script>
-        <script src="plugins/kalendar/kalendar.js" type="text/javascript"></script>
-        <script src="plugins/kalendar/edit-kalendar.js" type="text/javascript"></script>
-        <script src="plugins/sparkline/jquery.sparkline.js" type="text/javascript"></script>
-        <script src="plugins/sparkline/jquery.customSelect.min.js" ></script> 
-        <script src="plugins/sparkline/sparkline-chart.js"></script> 
-        <script src="plugins/sparkline/easy-pie-chart.js"></script>
-        <script src="plugins/morris/morris.min.js" type="text/javascript"></script> 
-        <script src="plugins/morris/raphael-min.js" type="text/javascript"></script>  
-        <script src="plugins/morris/morris-script.js"></script> 
-        <script src="plugins/demo-slider/demo-slider.js"></script>
-        <script src="plugins/knob/jquery.knob.min.js"></script> 
-        <script src="js/jPushMenu.js"></script> 
-        <script src="js/side-chats.js"></script>
-        <script src="js/jquery.slimscroll.min.js"></script>
-        <script src="plugins/scroll/jquery.nanoscroller.js"></script>
-    </body>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Inicio</title>
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="css/admin.css" rel="stylesheet" type="text/css" />
+	<link href="plugins/calendar/fullcalendar.css" rel="stylesheet" type="text/css" />
+	<link href="plugins/calendar/fullcalendar.print.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="panel">
+					<div id='external-events'>
+						<div class="fc-heading">
+							<h5>Eventos</h5>
+						</div>
+						<div class="fc-body">
+							<div class='external-event'>Pre-Inscripciones</div>
+							<div class='external-event'>Inscripciones</div>
+							<div class='external-event'>Matriculaciones</div>
+							<div class='external-event'>Parciales</div>
+							<div class='external-event'>Conferencia</div>
+							<div class='external-event'>Diplomado</div>
+							<div class='external-event'>Reunion Docentes</div>
+							<div class='external-event'>Reunion Directiva</div>
+							<div class='external-event'>Conferencia</div>
+							<p>
+								<input type='checkbox' id='drop-remove' /> <label for='drop-remove'>Eliminar al finalizar</label>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class="block-web">
+					<div id='calendar'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="js/jquery-2.1.0.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common-script.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/jquery-ui.custom.min.js"></script>
+	<script src="plugins/calendar/fullcalendar.min.js"></script>
+	<script src="plugins/calendar/external-draging-calendar.js"></script>
+	<script src="js/jPushMenu.js"></script> 
+	<script src="js/side-chats.js"></script>
+</body>
 </html>

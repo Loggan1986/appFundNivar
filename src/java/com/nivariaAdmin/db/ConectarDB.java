@@ -9,10 +9,10 @@ import java.util.logging.Logger;
 
 
 public class ConectarDB {
-    private String driver = "";
-    private String url = "";
-    private String usuario = "";
-    private String password = "";
+    private String driver = "com.mysql.jdbc.Driver";
+    private String url = "jdbc:mysql://localhost:3306/nivari@admin1";
+    private String usuario = "@dmin_nivaria";
+    private String password = "nivari@admi";
     
     Connection conection = null;
     
