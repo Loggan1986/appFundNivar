@@ -11,8 +11,8 @@ import java.util.logging.Logger;
 public class ConectarDB {
     private String driver = "com.mysql.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/nivari@admin1";
-    private String usuario = "@dmin_nivaria";
-    private String password = "nivari@admi";
+    private String usuario = "root";
+    private String password = "";
     
     Connection conection = null;
     

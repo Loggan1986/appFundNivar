@@ -12,47 +12,28 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import com.nivariaAdmin.dao.personaDaoImpl;
-import com.nivariaAdmin.modelo.Persona;
-import java.sql.Date;
-import java.sql.SQLException;
-import javax.servlet.RequestDispatcher;
 
 /**
  *
- * @author ESTUDIANTES
+ * @author Sol M Nieto Baena
  */
-@WebServlet(name = "PersonaSvl", urlPatterns = {"/PersonaSvl"})
-public class PersonaSvl extends HttpServlet {
+@WebServlet(name = "PreInscripcionSvl", urlPatterns = {"/PreInscripcionSvl"})
+public class PreInscripcionSvl extends HttpServlet {
 
-    
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            personaDaoImpl perDao = new personaDaoImpl();
-            Persona person = new Persona();
             
-            String respuesta = null;
-            RequestDispatcher rd = null;
-            
-            try {
-                if (request.getParameter("btnRegistrar")!= null) {
-                    person.setCodigoRegistro(request.getParameter("codigo"));
-                    person.setFechaRegistro(Date.valueOf(request.getParameter("fechaRegistroS")));
-                    person.setNombres(request.getParameter("nombres"));
-                    person.setApellidos(request.getParameter("apellidos"));
-                    person.setFechaNacimiento(Date.valueOf(request.getParameter("cumpleaños")));
-                    person.setGenero(request.getParameter("genero"));
-                    person.setLugarNacimiento(request.getParameter("departamento"));
-                    person.setIdTipoDocumento(Integer.parseInt(request.getParameter("tipoIdent")));
-                    person.setNroDocumento(request.getParameter("ndoc"));
-                    
-                }
-            } catch (NumberFormatException e) {
-                System.out.println("Problemas en el server: " + e.toString());
-            }
-            rd.forward(request, response);
         }
     }
 
@@ -94,11 +75,5 @@ public class PersonaSvl extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-    private static class PersonaDaoImpl {
-
-        public PersonaDaoImpl() {
-        }
-    }
 
 }

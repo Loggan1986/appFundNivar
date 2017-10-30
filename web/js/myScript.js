@@ -7,11 +7,11 @@ function populate(t1,n2) {
 	n2.innerHTML ="";
 
 	if (t1.value == "TIT") {
-		var optionArray = ["|","progsof|Programación de Software","contab|Contabiliación","asisad|Asistencia Administrativa","mantcomp|Mantenimiento de Computadoras"]
+		var optionArray = ["select |- Seleccione Una Opción -","progsof|Programación de Software","contab|Contabiliación","asisad|Asistencia Administrativa","mantcomp|Mantenimiento de Computadoras"]
 	} else if (t1.value == "COR") {
-		var optionArray = ["|","repos|Reposteria","dibtec|Dibujo Técnico"]
+		var optionArray = ["select |- Seleccione Una Opción -","repos|Reposteria","dibtec|Dibujo Técnico"]
 	} else if (t1.value == "FLA") {
-		var optionArray = ["|","word|Word","power|Power Point"]
+		var optionArray = ["select |- Seleccione Una Opción -","word|Word","power|Power Point"]
 	} else if (t1.value == "OTR") {
                 var option = ["|"]
 	} 

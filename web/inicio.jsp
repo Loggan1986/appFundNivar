@@ -28,20 +28,21 @@
 							<h5>Eventos</h5>
 						</div>
 						<div class="fc-body">
-							<div class='external-event'>Pre-Inscripciones</div>
-							<div class='external-event'>Inscripciones</div>
-							<div class='external-event'>Matriculaciones</div>
-							<div class='external-event'>Parciales</div>
-							<div class='external-event'>Conferencia</div>
-							<div class='external-event'>Diplomado</div>
-							<div class='external-event'>Reunion Docentes</div>
-							<div class='external-event'>Reunion Directiva</div>
-							<div class='external-event'>Conferencia</div>
-							<p>
-								<input type='checkbox' id='drop-remove' /> <label for='drop-remove'>Eliminar al finalizar</label>
-							</p>
-						</div>
-					</div>
+                                                    <div class='external-event'>Pre-Inscripciones</div>
+                                                    <div class='external-event'>Inscripciones</div>
+                                                    <div class='external-event'>Matriculaciones</div>
+                                                    <div class='external-event'>Parciales</div>
+                                                    <div class='external-event'>Conferencia</div>
+                                                    <div class='external-event'>Diplomado</div>
+                                                    <div class='external-event'>Reunion Docentes</div>
+                                                    <div class='external-event'>Reunion Directiva</div>
+                                                    <div class='external-event'>Taller</div>
+                                                    <div class='external-event'>Entrega Informenes</div>
+                                                    <p>
+                                                        <input type='checkbox' id='drop-remove' /> <label for='drop-remove'>Eliminar al finalizar</label>
+                                                    </p>
+                                                </div>
+                                        </div>
 				</div>
 			</div>
 			<div class="col-md-10">
